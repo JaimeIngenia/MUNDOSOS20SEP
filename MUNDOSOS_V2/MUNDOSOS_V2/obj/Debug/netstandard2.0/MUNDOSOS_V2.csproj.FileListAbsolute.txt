@@ -1,0 +1,14 @@
+C:\Users\Jaime\source\repos\MUNDOSOS_V2\MUNDOSOS_V2\MUNDOSOS_V2\bin\Debug\netstandard2.0\MUNDOSOS_V2.deps.json
+C:\Users\Jaime\source\repos\MUNDOSOS_V2\MUNDOSOS_V2\MUNDOSOS_V2\bin\Debug\netstandard2.0\MUNDOSOS_V2.dll
+C:\Users\Jaime\source\repos\MUNDOSOS_V2\MUNDOSOS_V2\MUNDOSOS_V2\bin\Debug\netstandard2.0\ref\MUNDOSOS_V2.dll
+C:\Users\Jaime\source\repos\MUNDOSOS_V2\MUNDOSOS_V2\MUNDOSOS_V2\bin\Debug\netstandard2.0\MUNDOSOS_V2.pdb
+C:\Users\Jaime\source\repos\MUNDOSOS_V2\MUNDOSOS_V2\MUNDOSOS_V2\obj\Debug\netstandard2.0\MUNDOSOS_V2.csprojAssemblyReference.cache
+C:\Users\Jaime\source\repos\MUNDOSOS_V2\MUNDOSOS_V2\MUNDOSOS_V2\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Jaime\source\repos\MUNDOSOS_V2\MUNDOSOS_V2\MUNDOSOS_V2\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Jaime\source\repos\MUNDOSOS_V2\MUNDOSOS_V2\MUNDOSOS_V2\obj\Debug\netstandard2.0\MUNDOSOS_V2.AssemblyInfoInputs.cache
+C:\Users\Jaime\source\repos\MUNDOSOS_V2\MUNDOSOS_V2\MUNDOSOS_V2\obj\Debug\netstandard2.0\MUNDOSOS_V2.AssemblyInfo.cs
+C:\Users\Jaime\source\repos\MUNDOSOS_V2\MUNDOSOS_V2\MUNDOSOS_V2\obj\Debug\netstandard2.0\MUNDOSOS_V2.dll
+C:\Users\Jaime\source\repos\MUNDOSOS_V2\MUNDOSOS_V2\MUNDOSOS_V2\obj\Debug\netstandard2.0\ref\MUNDOSOS_V2.dll
+C:\Users\Jaime\source\repos\MUNDOSOS_V2\MUNDOSOS_V2\MUNDOSOS_V2\obj\Debug\netstandard2.0\MUNDOSOS_V2.pdb
+C:\Users\Jaime\source\repos\MUNDOSOS_V2\MUNDOSOS_V2\MUNDOSOS_V2\obj\Debug\netstandard2.0\MUNDOSOS_V2.csproj.CoreCompileInputs.cache
+C:\Users\Jaime\source\repos\MUNDOSOS_V2\MUNDOSOS_V2\MUNDOSOS_V2\obj\Debug\netstandard2.0\XamlC.stamp
