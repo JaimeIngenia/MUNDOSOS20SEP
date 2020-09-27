@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "IbvnkodM1yjsNsqIv4X0CTP9yGT3x6odYzQpfb5Xw3DykAwdzHSVJT/Zdd9go0r1PviOVUQtCMaD0S8pYOKTDA==",
+  "dgSpecHash": "c5Ga6YMexni1Ok173tn87LwFO6xBTpnz0Hq0cvGNOV5XQsNpK+utg7FQwWxjBCAcvjUAt9NwCPjTzBr6rjVsgA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Jaime\\source\\repos\\MUNDOSOS_V2\\MUNDOSOS_V2\\MUNDOSOS_V2.Android\\MUNDOSOS_V2.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Jaime\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\Jaime\\.nuget\\packages\\oxyplot.core\\1.0.0\\oxyplot.core.1.0.0.nupkg.sha512",
+    "C:\\Users\\Jaime\\.nuget\\packages\\oxyplot.xamarin.android\\1.0.0\\oxyplot.xamarin.android.1.0.0.nupkg.sha512",
+    "C:\\Users\\Jaime\\.nuget\\packages\\oxyplot.xamarin.forms\\1.0.0\\oxyplot.xamarin.forms.1.0.0.nupkg.sha512",
     "C:\\Users\\Jaime\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.android.arch.core.common\\1.1.1.3\\xamarin.android.arch.core.common.1.1.1.3.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.android.arch.core.runtime\\1.1.1.3\\xamarin.android.arch.core.runtime.1.1.1.3.nupkg.sha512",

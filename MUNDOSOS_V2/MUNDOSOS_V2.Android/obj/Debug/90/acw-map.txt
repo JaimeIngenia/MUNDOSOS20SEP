@@ -1,6 +1,12 @@
 MUNDOSOS_V2.Droid.MainActivity, MUNDOSOS_V2.Android;crc6478633b2db2d6b3a0.MainActivity
 MUNDOSOS_V2.Droid.MainActivity;crc6478633b2db2d6b3a0.MainActivity
 mundosos_v2.droid.MainActivity;crc6478633b2db2d6b3a0.MainActivity
+OxyPlot.Xamarin.Android.PlotView, OxyPlot.Xamarin.Android;crc6456e6f71a0b54d12a.PlotView
+OxyPlot.Xamarin.Android.PlotView;crc6456e6f71a0b54d12a.PlotView
+oxyplot.xamarin.android.PlotView;crc6456e6f71a0b54d12a.PlotView
+OxyPlot.Xamarin.Forms.Platform.Android.PlotViewRenderer, OxyPlot.Xamarin.Forms.Platform.Android;crc641fdf74f75d055456.PlotViewRenderer
+OxyPlot.Xamarin.Forms.Platform.Android.PlotViewRenderer;crc641fdf74f75d055456.PlotViewRenderer
+oxyplot.xamarin.forms.platform.android.PlotViewRenderer;crc641fdf74f75d055456.PlotViewRenderer
 Android.Support.V4.View.AsyncLayoutInflater+IOnInflateFinishedListenerImplementor, Xamarin.Android.Support.AsyncLayoutInflater;mono.android.support.v4.view.AsyncLayoutInflater_OnInflateFinishedListenerImplementor
 Android.Support.V4.View.AsyncLayoutInflater.IOnInflateFinishedListenerImplementor;mono.android.support.v4.view.AsyncLayoutInflater_OnInflateFinishedListenerImplementor
 mono.android.support.v4.view.AsyncLayoutInflater_OnInflateFinishedListenerImplementor;mono.android.support.v4.view.AsyncLayoutInflater_OnInflateFinishedListenerImplementor
