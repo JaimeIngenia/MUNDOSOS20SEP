@@ -10,7 +10,7 @@ namespace MUNDOSOS_V2
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage( new EntradaUsuario());
         }
 
         protected override void OnStart()

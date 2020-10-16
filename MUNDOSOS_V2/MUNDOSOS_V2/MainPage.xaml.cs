@@ -78,7 +78,17 @@ namespace MUNDOSOS_V2
                     {
                         max = c;
                     }
-
+                    if(h2-h1>1)
+                    { 
+                        for (int i = h1+1; i < h2; i++)
+                        {
+                            t = Math.Round((c1 * voltaje), 9, MidpointRounding.AwayFromZero);
+                            DatosPanel temp_extra = new DatosPanel();//--------------->datos panel                       
+                            temp_extra.corriente = t;
+                            temp_extra.hora = i.ToString();
+                            dp.Add(temp_extra);
+                        }
+                    }
                     c = 0;
                     restMin = (int.Parse(d[j + 1].m) * 60);//resta mninutos en segundos
                     restSeg = (int.Parse(d[j + 1].s));//resta segundos en segundos
@@ -86,7 +96,7 @@ namespace MUNDOSOS_V2
                     TiempoHoras = SumSeg2 / 3600;//horas totales de los segundos sumados
                     t = Math.Round((TiempoHoras * c1 * voltaje), 9, MidpointRounding.AwayFromZero);
                     c = Math.Round((c + t), 9, MidpointRounding.AwayFromZero); //Consumo calculado
-                    //c = c + (TiempoHoras) * c1 * voltaje;//Consumo calculado
+     
                 }
                 j++;
             }
@@ -159,7 +169,17 @@ namespace MUNDOSOS_V2
                     {
                         max = c;
                     }
-
+                    if (h2 - h1 > 1)
+                    {
+                        for (int i = h1 + 1; i < h2; i++)
+                        {
+                            t = Math.Round((c1 * voltaje), 9, MidpointRounding.AwayFromZero);
+                            DatosPanel temp_extra_1 = new DatosPanel();//--------------->datos panel                       
+                            temp_extra_1.corriente = t;
+                            temp_extra_1.hora = i.ToString();
+                            dt1.Add(temp_extra_1);
+                        }
+                    }
                     c = 0;
                     restMin = (int.Parse(d1[j + 1].m) * 60);//resta mninutos en segundos
                     restSeg = (int.Parse(d1[j + 1].s));//resta segundos en segundos
@@ -241,7 +261,17 @@ namespace MUNDOSOS_V2
                     {
                         max = c;
                     }
-
+                    if (h2 - h1 > 1)
+                    {
+                        for (int i = h1 + 1; i < h2; i++)
+                        {
+                            t = Math.Round((c1 * voltaje), 9, MidpointRounding.AwayFromZero);
+                            DatosPanel temp_extra_2 = new DatosPanel();//--------------->datos panel                       
+                            temp_extra_2.corriente = t;
+                            temp_extra_2.hora = i.ToString();
+                            dt2.Add(temp_extra_2);
+                        }
+                    }
                     c = 0;
                     restMin = (int.Parse(d2[j + 1].m) * 60);//resta mninutos en segundos
                     restSeg = (int.Parse(d2[j + 1].s));//resta segundos en segundos
@@ -323,7 +353,17 @@ namespace MUNDOSOS_V2
                     {
                         max = c;
                     }
-
+                    if (h2 - h1 > 1)
+                    {
+                        for (int i = h1 + 1; i < h2; i++)
+                        {
+                            t = Math.Round((c1 * voltaje), 9, MidpointRounding.AwayFromZero);
+                            DatosPanel temp_extra_3 = new DatosPanel();//--------------->datos panel                       
+                            temp_extra_3.corriente = t;
+                            temp_extra_3.hora = i.ToString();
+                            dt3.Add(temp_extra_3);
+                        }
+                    }
                     c = 0;
                     restMin = (int.Parse(d3[j + 1].m) * 60);//resta mninutos en segundos
                     restSeg = (int.Parse(d3[j + 1].s));//resta segundos en segundos
@@ -355,6 +395,18 @@ namespace MUNDOSOS_V2
                 max = c;
             }
 
+            List<DatosPanel> d_suma;
+            d_suma = new List<DatosPanel>();
+            for (int i = 0; i < dt1.Count; i++)
+            {
+                DatosPanel temp_suma = new DatosPanel();//--------------->datos panel                       
+                temp_suma.corriente = dt1[i].corriente + dt2[i].corriente + dt3[i].corriente;
+                temp_suma.hora = dt1[i].hora;
+                d_suma.Add(temp_suma);
+            }
+
+               
+
 
             var plotModel = new PlotModel { Title = "Grafica de consumo" };
             CategoryAxis xaxis = new CategoryAxis();
@@ -362,9 +414,6 @@ namespace MUNDOSOS_V2
             xaxis.Position = AxisPosition.Bottom;
             xaxis.MajorGridlineStyle = LineStyle.Solid;
             xaxis.MinorGridlineStyle = LineStyle.Dot;
-            xaxis.Labels.Add("8:00");
-            xaxis.Labels.Add("9:00");
-            xaxis.Labels.Add("10:00");
             ColumnSeries s1 = new ColumnSeries();
             s1.Title = "Panel";
             s1.IsStacked = false;
@@ -379,46 +428,44 @@ namespace MUNDOSOS_V2
             ColumnSeries s2 = new ColumnSeries();
             s2.Title = "Consumo";
             s2.IsStacked = false;
-            //s2.Items.Add(new ColumnItem(1.5));
-            //s2.Items.Add(new ColumnItem(1.6));
-            //s2.Items.Add(new ColumnItem(0.4));/////////amarilla
-
-            foreach (var item in dt1) // ya se agregaron las horas ya que se sustituyò este codigo //xaxis.Labels.Add("8:00");
+            foreach (var item in d_suma) // ya se agregaron las horas ya que se sustituyò este codigo //xaxis.Labels.Add("8:00");
             {
                 s2.Items.Add(new ColumnItem(item.corriente));
             };
+
+            /*foreach (var item in dt1) // ya se agregaron las horas ya que se sustituyò este codigo //xaxis.Labels.Add("8:00");
+            {
+                s2.Items.Add(new ColumnItem(item.corriente));
+            };*/
             
+
+
+
+
+
             ColumnSeries s3 = new ColumnSeries();
             s3.IsStacked = false;
-            foreach (var item in dt2) // ya se agregaron las horas ya que se sustituyò este codigo //xaxis.Labels.Add("8:00");
+            /*foreach (var item in dt2) // ya se agregaron las horas ya que se sustituyò este codigo //xaxis.Labels.Add("8:00");
             {
                 s3.Items.Add(new ColumnItem(item.corriente));
-            };
-
-            //s3.Items.Add(new ColumnItem(1.2));
-            //s3.Items.Add(new ColumnItem(1.3));
-            //s3.Items.Add(new ColumnItem(1.4));
-            //s3.Items.Add(new ColumnItem(1.5));
+            };*/
 
 
             ColumnSeries s4 = new ColumnSeries();
             s4.IsStacked = false;
-            foreach (var item in dt3) // ya se agregaron las horas ya que se sustituyò este codigo //xaxis.Labels.Add("8:00");
+            /*foreach (var item in dt3) // ya se agregaron las horas ya que se sustituyò este codigo //xaxis.Labels.Add("8:00");
             {
                 s4.Items.Add(new ColumnItem(item.corriente));
-            };
-            //s4.Items.Add(new ColumnItem(1.5));//azul1
-            //s4.Items.Add(new ColumnItem(1.4));//azul2
-            //s4.Items.Add(new ColumnItem(1.3));
-            //s4.Items.Add(new ColumnItem(1.2));
+            };*/
+            
             
             plotModel.Series.Add(s1);
             plotModel.Series.Add(s2);
-            plotModel.Series.Add(s3);
-            plotModel.Series.Add(s4);
+            //plotModel.Series.Add(s3);
+            //plotModel.Series.Add(s4);
 
             plotModel.Axes.Add(xaxis);
-            plotModel.Axes.Add(new LinearAxis { Position = AxisPosition.Left, Minimum = 0, Maximum = max });
+            plotModel.Axes.Add(new LinearAxis { Position = AxisPosition.Left, Minimum = 0, Maximum = 520 });
 
             _opv.Model = plotModel;
             Content = _opv;
